@@ -49,7 +49,7 @@ html:focus-within {
     --clr-title:hsl(0, 0%, 13%); /* titles */
     --clr-body-text:hsl(0, 0%, 39%); /* general text*/
     --clr-ascent:hsl(248, 72%, 65%); /* icons nav hover*/
-    --shadow:hsla(216, 86%, 6%, 0.702);
+    --shadow:rgba(0, 0, 0, 0.18) 0px 2px 4px;
 
     --section-spacing:3.5rem;
 
@@ -260,7 +260,6 @@ section {
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--clr-border);
     box-shadow:var(--shadow); 
 }
 
