@@ -148,7 +148,6 @@ p {
 }
 
 section {
-    margin-bottom: var(--space-xxl);
     padding-top:var(--section-spacing);
     padding-bottom: var(--section-spacing);
 }
@@ -232,6 +231,10 @@ section {
 
 
 /* || About section */
+.about,
+.contact {
+    background-color: rgb(234, 234, 240);
+}
 
 .skills--list {
     padding: var(--space-sm);
@@ -385,7 +388,6 @@ section {
     padding: var(--space-xl);
     margin-top: var(--space-sm);
     text-align: center;
-    border-top:1px solid var(--clr-border);
 }
 
 .footer span {
