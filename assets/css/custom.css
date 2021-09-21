@@ -41,10 +41,12 @@ html:focus-within {
     --fs-h3:1.2rem;
     --fs-h5:1.1rem;
     --fs-p:.75rem;
- 
+    --fs-icon: 1.2rem;
+
     /* || Custom colors */
 
-    --clr-bg:hsl(240, 33%, 96%); /* website background*/
+    --clr-bg:hsl(0, 0%, 99%); /* general background*/
+    --clr-bg-sections:hsl(0, 10%, 96%); /* sections background*/
     --clr-border:hsl(197, 7%, 81%); /* border*/
     --clr-title:hsl(0, 0%, 13%); /* titles */
     --clr-body-text:hsl(0, 0%, 39%); /* general text*/
@@ -69,6 +71,12 @@ html:focus-within {
        --z-modal:100 ; 
 }
 
+@media (min-width: 900px) {
+    :root {
+        --fs-h1: 4.25rem;
+        --fs-icon: 1.5rem;
+    }
+}
 /* General Settings */
 
 body {
@@ -186,7 +194,6 @@ section {
     left: 0;
     width: 100%;   
     padding: var(--space-lg) var(--space-md);
-    /* border-radius: 0 -1px 4px rgba(193,182,252,.5); */
 }
 
 .nav--list {
@@ -214,7 +221,7 @@ section {
 
 .hero--content {
     position: relative;
-    max-width: 70ch;
+    max-width: 55ch;
     margin-bottom: var(--space-md);
 }
 
@@ -223,7 +230,7 @@ section {
 }
 
 .hero--link i {
-    font-size: 1.2rem;
+    font-size: var(--fs-icon);
     margin-right:var(--space-md);
     color: var(--clr-ascent);
     cursor: pointer;
@@ -233,7 +240,7 @@ section {
 /* || About section */
 .about,
 .contact {
-    background-color: rgb(234, 234, 240);
+    background-color: var(--clr-bg-sections);
 }
 
 .skills--list {
@@ -253,7 +260,7 @@ section {
     .about--grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap:var(--space-xl);
+        gap:var(--space-xxxl);
     }
 }
 
@@ -299,14 +306,14 @@ section {
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap:var(--space-sm);
+    gap:var(--space-md);
 }
 
 @media (min-width:768px) {
     .grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto-content 1fr auto-content 1fr; 
-        gap:10px;
+        gap:var(--space-md);
     }
 
     .section__title {
