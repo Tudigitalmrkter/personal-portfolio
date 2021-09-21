@@ -50,7 +50,7 @@ html:focus-within {
     --clr-border:hsl(197, 7%, 81%); /* border*/
     --clr-title:hsl(0, 0%, 13%); /* titles */
     --clr-body-text:hsl(0, 0%, 39%); /* general text*/
-    --clr-ascent:hsl(248, 72%, 65%); /* icons nav hover*/
+    --clr-ascent:#7765e6; /* icons nav hover*/
     --shadow:rgba(0, 0, 0, 0.18) 0px 2px 4px;
 
     --section-spacing:3.5rem;
@@ -103,15 +103,14 @@ a {
 
 h1 {
     margin-bottom: var(--space-sm);
-    font-size: var(--fs-h1);
+    font-size: var(--fs-h5);
     font-weight: var(--fw-medium);
-    line-height: 1.2;
-    color: var(--clr-title);   
+    line-height: 1.1;
+    color: var(--clr-ascent);   
 }
 
 h2 {
     margin-bottom: var(--space-sm);  
-    text-transform: uppercase;
     font-size: var(--fs-h2); 
     color: var(--clr-ascent);   
 }
@@ -124,7 +123,6 @@ h3 {
 
 h5 {
     margin-bottom: var(--space-sm);  
-    text-transform: uppercase;
     font-size: var(--fs-h5); 
     font-weight: var(--fw-medium);
     color: var(--clr-title);
@@ -139,6 +137,17 @@ p {
 .section__left p {
     margin-bottom: var(--space-sm);
 }
+
+/* || Hero section typography */
+
+.hero--subheading {
+    font-size:var(--fs-h1);
+    font-weight: var(--fw-medium);
+    line-height: 1.2;
+    margin-bottom: var(--space-xxs);
+    color: var(--clr-title);
+}
+
 
 
 /* ---- Utilities & Layout ---- */
@@ -219,21 +228,29 @@ section {
     padding-top: var(--space-xxl);
 }
 
-.hero--content {
-    position: relative;
-    max-width: 55ch;
+
+.mx-width-100 {
     margin-bottom: var(--space-md);
+    max-width:540px;
 }
 
 .hero--links {
     display: flex;   
 }
 
-.hero--link i {
-    font-size: var(--fs-icon);
+.hero--link {
     margin-right:var(--space-md);
-    color: var(--clr-ascent);
+    font-size: var(--fs-icon);
+    color: var(--clr-body-text);
     cursor: pointer;
+}
+
+.hero--link:hover{
+    color: var(--clr-ascent);
+}
+
+.text-black-100 {
+    color: var(--clr-body-text);
 }
 
 
