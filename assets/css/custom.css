@@ -316,7 +316,11 @@ section {
 }
 
 .card__link i {
-    font-size: 1.2rem;
+    font-size: var(--fs-icon);
+    color: var(--clr-body-text);
+}
+
+.card__link i:hover {
     color: var(--clr-ascent);
 }
 
@@ -396,13 +400,16 @@ section {
 .contact__icon  {
     display: flex;
     flex-direction: column; 
-    font-size: var(--fs-p);
-    
+    font-size: var(--fs-p);   
 }
 
 .contact__icon a {
     margin-bottom: 10px;
-    font-size: 1.2rem;
+    font-size: var(--fs-icon);
+    color: var(--clr-body-text);
+}
+
+.contact__icon a:hover{
     color: var(--clr-ascent);
 }
 
