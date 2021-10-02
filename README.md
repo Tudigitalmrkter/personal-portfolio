@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-This is personal Portfolio - Dark. 
+This is personal Portfolio 
 
 ## Table of contents
 - [My process](#my-process)
